@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <script src="scripts.js"></script> 
+  <link rel="stylesheet" href="style.css"> 
+ </head> 
+ <body> 
+  <button class="whitebutton" onclick="whiteColorBtn()">White color</button> 
+  <button class="blackbutton" onclick="blackcolorbtn()">Black color</button> 
+  <script>
+function whiteColorBtn() {
+    document.body.style.backgroundColor = "white";
+}
+</script> 
+  <script>
+function blackcolorbtn() {
+    document.body.style.backgroundColor = "Black";
+}
+</script> 
+  <table> 
+   <caption>
+     Execution Details 
+   </caption> 
+   <thead> 
+    <tr> 
+     <th>Execution Type</th> 
+     <th>VM</th> 
+     <th>Total TC</th> 
+     <th>Not Executed</th> 
+     <th>Executed</th> 
+    </tr> 
+   </thead> 
+   <tbody id="report"> 
+</tbody> 
+  </table> 
+  <table id="report"> 
+   <caption>
+     Report Overview 
+   </caption> 
+   <thead> 
+    <tr> 
+     <th>Pass Test Cases</th> 
+     <th>Fail Test Cases</th> 
+     <th>Avgtime/passTestCases (sec)</th> 
+     <th>Avgtime/FailTestCases (sec)</th> 
+     <th>Total Time Taken(Min)</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr> 
+     <td id="passTC">80</td> 
+     <td id="failTC">20</td> 
+     <td id="avgtimePassTC">50</td> 
+     <td id="avgtimeFailTC">120</td> 
+     <td id="totalTimeTaken">45</td> 
+    </tr> 
+   </tbody> 
+  </table>  
+ </body>
+</html>
